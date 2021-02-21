@@ -1,0 +1,175 @@
+<%- include('partials/header') %>
+
+ <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light topBar">
+        <a class="navbar-brand mainHead" href="#"><i class="fa fa-ticket"></i> TICKETS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-top : 35px;" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-grow-1 navLinksUl">
+                <li class="nav-item active" style="flex-grow: inherit;">
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle font-weight-bold hoverEffect downArrow" href="#"
+                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> My Tickets </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item ChangeColor" href="#" target="">Upcoming</a>
+                        <a class="dropdown-item ChangeColor" href="#" target="">Completed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold hoverEffect" href="./logout">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- /navbar end -->
+    <!-- Header start -->
+    <div class="headDiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <div class="card text-center card-container pt-3 pb-3 bgColor">
+                        <div class="card-header border border-0 bg-transparent">
+                            <ul class="nav nav-tabs border border-0 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active px-4 linksFont LinkBg" href="#Flights"><i
+                                            class="fa fa-plane"></i> Flights</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active px-4 linksFont LinkBg" href="#Trains"><i
+                                            class="fa fa-train"></i> Trains</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active px-4 linksFont LinkBg" href="#Buses"><i
+                                            class="fa fa-bus"></i> Buses</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body ">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="FromText" class="float-left font-weight-bold">From : </label>
+                                        <input type="text" class="form-control" id="FromText" placeholder="SOURCE">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="ToText" class="float-left font-weight-bold">To :</label>
+                                        <input type="text" class="form-control" id="ToText" placeholder="DESITINATION">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="TravelDate" class="float-left font-weight-bold">Journey Date
+                                        :</label><br><br>
+                                    <input class="w-50 float-left" type="date" class="form-control" id="TravelDate"
+                                        placeholder="">
+                                </div><br>
+                                <div class="col-auto my-1">
+                                    <label class="mr-sm-2 float-left font-weight-bold"
+                                        for="inlineFormCustomSelect">Class :</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Sleeper</option>
+                                        <option value="2">Non Sleeper</option>
+                                        <option value="3">Ac Sleeper</option>
+                                        <option value="3">Non Ac Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 my-2 d-inline-block float-left">
+                                    <label class="mr-sm-2 float-left font-weight-bold"
+                                        for="inlineFormCustomSelect">Adult :</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 my-2 d-inline-block">
+                                    <label class="mr-sm-2 float-left font-weight-bold"
+                                        for="inlineFormCustomSelect">Child :</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <a href="/submit" class="btn btn-primary btn-block mt-2">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Header end -->
+    <!-- footer start -->
+    <footer>
+        <div id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <h3>About Tickets</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <h3>Top Flights Routes</h3>
+                        <ul>
+                            <li><a href="#">Manila flights</a></li>
+                            <li><a href="#">Dubai flights</a></li>
+                            <li><a href="#">Bangkok flights</a></li>
+                            <li><a href="#">Tokyo Flight</a></li>
+                            <li><a href="#">New York Flights</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12 ">
+                        <h3>Train Routes</h3>
+                        <ul>
+                            <li><a href="#">Vijayawada Jn</a></li>
+                            <li><a href="#">Secunderabad Jn</a></li>
+                            <li><a href="#">KSR Bengaluru Jn</a></li>
+                            <li><a href="#">Chennai Central</a></li>
+                            <li><a href="#">Chatrapati Shivaji Terminus</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <h3>Bus Routes</h3>
+                        <ul>
+                            <li><a href="#">vishkapatnam</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                            <li><a href="#">Bengaluru</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Anantapur</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <p class="">
+                            <a class="iconSize mx-2" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a class="iconSize mx-2" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a class="iconSize mx-2" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a class="iconSize mx-2" href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                        </p>
+                        <p>Copyright 2021 Free Html5 . All Rights Reserved. <br>Made with <i class="fa fa-heart"></i> by
+                            Lashya Bhavanari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer end -->
+
+<%- include('partials/footer') %>
+

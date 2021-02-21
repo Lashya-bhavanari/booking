@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+
+<!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light topBar">
+        <a class="navbar-brand mainHead" href="#"><i class="fa fa-ticket"></i> TICKETS</a>
+    </nav>
+
+    <!-- /navbar end -->
+    <!-- Header start -->
+    <div class="headDiv">
+        <!-- card start -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                   <form action="/login" class="form-container" method="POST">
+                        <div class="form-group">
+                            <label for="email" class="text-light">User Name :</label>
+                            <input class="d-inline-block" type="email" class="form-control" name="username"
+                                placeholder="User Name" aria-describedby="emailHelp"
+                                style="background-color:transparent" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-light">Password &nbsp;&nbsp; :</label>
+                            <input class="d-inline-block" type="password" class="form-control" placeholder="password"
+                                name="password" style="background-color:transparent" required>
+                        </div>
+                        <button type="submit" class="btn btn-block border border-1 "
+                            style="background-color: transparent">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /card end -->
+
+    </div>
+
+    <!-- /Header end -->
+
+<%- include('partials/footer') %>
+<!--<a type="submit" class="btn btn-block border border-1 " href="/booking"
+                            style="background-color: transparent">
+                            <span class="text-light font-weight-bold "> LOGIN</span></a>-->

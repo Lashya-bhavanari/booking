@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+ <!-- navbar start -->
+     <nav class="navbar navbar-expand-lg navbar-light topBar">
+        <a class="navbar-brand mainHead" href="#"><i class="fa fa-ticket"></i> TICKETS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-top : 35px;" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-grow-1 navLinksUl">
+                <li class="nav-item active" style="flex-grow: inherit;">
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold hoverEffect" href="./">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- /navbar end -->
+     <!-- Header start -->
+     <div class="headDiv">
+         <!-- card start -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <form action="/register" class="form-container" method="POST">
+                        <div class="form-group">
+                            <label for="email" class="text-light">Create User Name &nbsp;&nbsp;&nbsp;&nbsp;<b> :</b></label>
+                            <input class="d-inline-block" type="text" class="form-control" name="username"
+                                placeholder="Create User Name" aria-describedby="emailHelp" style="background-color:transparent" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-light">Enter Password&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b> :</b></label>
+                            <input class="d-inline-block" type="password" class="form-control" placeholder="password"
+                                name="password" style="background-color:transparent" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="repassword" class="text-light">Re-Enter Password &nbsp;&nbsp;&nbsp;&nbsp;<b>:</b></label>
+                            <input class="d-inline-block" type="password" class="form-control" placeholder="Confirm Password"
+                                name="repassword" style="background-color:transparent" required>
+                        </div>
+                        <button type="submit" class="btn btn-block border border-1" style="background-color: transparent">
+                         Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /card end -->
+    </div>
+    
+    <!-- /Header end -->
+
+<%- include('partials/header') %>
